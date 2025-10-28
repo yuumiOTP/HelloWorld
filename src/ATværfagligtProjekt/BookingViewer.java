@@ -53,9 +53,9 @@ public class BookingViewer {
     public void showAvailableSlots(LocalDate date) {
         List<LocalTime> slots = availableSlots.get(date);
         if (slots == null || slots.isEmpty()) {
-            System.out.println("Ingen ledige tider på " + date);
+            System.out.println("Ingen ledige tider d. " + date);
         } else {
-            System.out.println("Ledige tider på " + date + ":");
+            System.out.println("Ledige tider d. " + date + ":");
             for (LocalTime time : slots) {
                 System.out.println("- " + time);
             }
